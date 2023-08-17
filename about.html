@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
+            <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>WeMars</title>
+
+        <!--Links css file to html site-->
+        <link rel="stylesheet" href="style.css">
+        <!--Links bootstrapcdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/WeMarsLogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <!--Close icon from Font Awesome icons-->
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="">SPONSORS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+        <h2>Sub-Teams</h2>
+        <section class="teams">
+            <div class="row">
+                <div class="team-col">
+                    <img src="images/MechanicalTeam.png">
+                    <div class="layer">
+                        <h3>MECHANICAL</h3>
+                    </div>
+                </div>
+                <div class="team-col">
+                    <img src="images/SoftwareTeamAdjusted.png">
+                    <div class="layer">
+                        <h3>SOFTWARE</h3>
+                    </div>
+                </div>
+                <div class="team-col">
+                    <img src="images/ElectricalTeam.png">
+                    <div class="layer">
+                        <h3>ELECTRICAL</h3>
+                    </div>
+                </div>
+                <div class="team-col">
+                    <img src="images/london.png">
+                    <div class="layer">
+                        <h3>BUSINESS</h3>
+                    </div>
+                </div>
+        </section>
+
+        <h2>Mechanical</h2>
+        <section class="mechanical">
+            
+        </section>
+
+        <h2>Software</h2>
+        <section class="software">
+            
+        </section>
+
+        <h2>Electrical</h2>
+        <section class="electrical">
+            
+        </section>
+
+        <h2>Business</h2>
+        <section class="business">
+            
+        </section>
+
+        <section class="footer">
+            <p>Made by WeMars members</p>
+        </section>
+        
+        <!--Javascript for Toggle Menu-->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>

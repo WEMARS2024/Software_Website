@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
+            <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>WeMars</title>
+
+        <!--Links css file to html site-->
+        <link rel="stylesheet" href="style.css">
+        <!--Links bootstrapcdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/WeMarsLogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <!--Close icon from Font Awesome icons-->
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="">SPONSORS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Welcome to WeMars</h1>
+            </div>
+        </section>
+
+        <h2>Who are we?</h2>
+        <section class="whoAreWe">
+            <div class="row">
+                <div class="blurb-col">
+                    <p>The Western Engineering Mars Rover team is a student ran club driven towards the goal of building a rover that is capable of accomplishing various tasks in environments similar to the surface of mars. 
+                        Our team is comprised of various students from multiple disciplines. 
+                        As an organization, we strive to inspire our members and members of the public to become more 
+                        involved in science and technology through robotics</p>
+                </div>
+                <div class="blurb-col">
+                    <img src="images/MarsRover.png">
+                </div>
+            </div>
+        </section>
+
+        <h2>Our Goal</h2>
+        <section class="goal">
+            <div class="row">
+                <div class="blurb-col">
+                    <img src="images/MarsRover.png">
+                </div>
+                <div class="blurb-col">
+                    <p>Our goal as a team is to compete in and win the Canadian International Rover Challenge. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p>Made by WeMars members</p>
+        </section>
+        
+        <!--Javascript for Toggle Menu-->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>

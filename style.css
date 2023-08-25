@@ -230,15 +230,46 @@ nav .fa{
 }
 
 /*Footer section*/
-.footer{
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    background-color: black;
+.footer *{
+    background: transparent;
+    color: white;
 }
 
-.footer p{
-    background: transparent;
+.footer{
+    text-align: center;
+    width: 80%;
+    margin-top: 2%;
+    margin: auto;
+    position: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #4c2a87;
+}
+
+.footer h2{
+    padding-top: 10px;
+}
+
+.footer h3{
+    padding: 20px;
+}
+
+#contact-btn{
+    background: black;
+}
+
+#contact-btn:hover{
+    color: #4c2a87;
+    transition: 1s;
+}
+
+.icons-container{
+    position: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    padding: 30px;
 }
 
 /*Subsequent pages*/

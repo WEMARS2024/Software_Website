@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background: black;
 }
 
 .header{
@@ -68,11 +69,13 @@ nav img{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    background: transparent;
 }
 
 .text-box h1{
     font-size: 62px;
     margin: 0px 0 40px;
+    background: transparent;
 }
 
 nav .fa{
@@ -102,7 +105,7 @@ nav .fa{
 
     .nav-links{
         position: fixed;
-        background: #693EB2;
+        background: black;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -126,37 +129,52 @@ nav .fa{
 }
 
 /*Blurbs Section*/
-.whoAreWe{
+.indexBlurbBox {
     width: 80%;
+    margin-top: 2%;
+    margin: auto;
+    position: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #4c2a87;
+}
+
+.indexBlurbBox h2{
+    color: #fff;
+    font-size: 36px;
+    text-align: auto;
+    text-align: center;
+    background: transparent;
+}
+
+.indexBlurbBox p{
+    color: #fff;
+    font-size: 15px;
+    background: transparent;
+}
+
+.whoAreWe{
     margin: auto;
     text-align: auto;
-    text-align: left;
+    text-align: center;
+    margin-top: 2%;
 }
 
 .goal{
-    width: 80%;
     margin: auto;
     text-align: auto;
-    text-align: right;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-.blurb-col{
-    flex-basis: 47%;
-    max-width: 47%;
+.row{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    background: #242834;
     border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.blurb-col img{
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.blurb-col p{
-    color: black;
 }
 
 /*Footer section*/
@@ -165,6 +183,10 @@ nav .fa{
     text-align: center;
     padding: 20px 0;
     background-color: #4c2a87;
+}
+
+.footer p{
+    background: transparent;
 }
 
 /*Subsequent pages*/
@@ -192,27 +214,12 @@ nav .fa{
     text-align: center;
 }
 
-h2{
-    background-color: #4c2a87;
-    color: #fff;
-    font-size: 36px;
-    text-align: auto;
-    text-align: center;
-    padding: 10px;
-}
-
 p{
     color: #777;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
-}
-
-.row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .team-col{

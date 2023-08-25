@@ -18,10 +18,14 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    width: 90vw;
+    position: fixed;
+    z-index: 5;
 }
 
 nav img{
-    width: 200px;
+    width: 130px;
 }
 
 .nav-links{
@@ -39,7 +43,7 @@ nav img{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .nav-links ul li::after{
@@ -68,23 +72,30 @@ nav img{
 
 .text-box h1{
     font-size: 62px;
-}
-
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color: #fff;
+    margin: 0px 0 40px;
 }
 
 nav .fa{
     display: none;
 }
 
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 54px;
+    font-size: 16px;
+    background: #4c2a87;
+    border-radius: 20px;
+    position: relative;
+}
 
+.hero-btn:hover{
+    background: #243391;
+    transition: 1s;
+}
+
+@media(max-width: 800px){
     .nav-links ul li{
         display: block;
     }
@@ -144,12 +155,16 @@ nav .fa{
     display: block;
 }
 
+.blurb-col p{
+    color: black;
+}
+
 /*Footer section*/
 .footer{
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    background-color: #693EB2;
+    background-color: #4c2a87;
 }
 
 /*Subsequent pages*/
@@ -178,7 +193,7 @@ nav .fa{
 }
 
 h2{
-    background-color: #693EB2;
+    background-color: #4c2a87;
     color: #fff;
     font-size: 36px;
     text-align: auto;

@@ -1,8 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     background: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, a {
+    font-family: 'Handjet', cursive;
 }
 
 .header{
@@ -15,8 +19,9 @@
 }
 
 nav{
+    top: 0;
     display: flex;
-    padding: 2% 6%;
+    padding: 1% 6%;
     justify-content: space-between;
     align-items: center;
     background-color: black;
@@ -37,14 +42,14 @@ nav img{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 30px;
+    padding: 2px 30px;
     position: relative;
 }
 
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .nav-links ul li::after{
@@ -116,6 +121,7 @@ nav .fa{
     display: none;
 }
 
+/*Buttons*/
 .hero-btn{
     display: inline-block;
     text-decoration: none;
@@ -222,11 +228,8 @@ nav .fa{
 
 .row{
     margin-top: 2%;
-    margin-bottom: 2%;
     display: flex;
     justify-content: space-between;
-    background: #242834;
-    border-radius: 10px;
 }
 
 /*Footer section*/
@@ -248,10 +251,12 @@ nav .fa{
 
 .footer h2{
     padding-top: 10px;
+    font-size: 30px;
 }
 
 .footer h3{
     padding: 20px;
+    font-size: 20px;
 }
 
 #contact-btn{
@@ -272,7 +277,7 @@ nav .fa{
     padding: 30px;
 }
 
-/*Subsequent pages*/
+/*----Subsequent pages----*/
 .sub-header{
     height: 50vh;
     width: 100%;
@@ -284,25 +289,56 @@ nav .fa{
 }
 
 .sub-header h1{
-    margin-top: 100px;
-    font-size: 32px;
+    position: relative;
+    font-size: 80px;
+    top: 200px;
+    text-align: center;
+    background-color: transparent;
 }
 
-/*About page*/
-/*Teams Section*/
-.teams{
+/*----Team page----*/
+.exec *{
+    color: white;
+    background-color: transparent;
+    padding: 2%;
+}
+
+.exec{
     width: 80%;
     margin: auto;
     text-align: auto;
     text-align: center;
 }
 
-p{
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
+.exec-col{
+    flex-basis: 24%;
+    max-width: 200px;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+    background: #4c2a87;
+}
+
+.exec-col img{
+    width: 100%;
+    max-width: 200px;
+    position: left;
+}
+
+.exec h1{
+    font-size: 30px;
+}
+
+.exec h4{
+    font-size: 20px;
+}
+
+/*Teams Section*/
+/*.teams{
+    width: 80%;
+    margin: auto;
+    text-align: auto;
+    text-align: center;
 }
 
 .team-col{
@@ -312,6 +348,14 @@ p{
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
 }
 
 .team-col img{
@@ -350,4 +394,4 @@ p{
 .layer:hover h3{
     bottom: 49%;
     opacity: 1;
-}
+}*/

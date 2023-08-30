@@ -296,6 +296,11 @@ nav .fa{
     background-color: transparent;
 }
 
+#mechanical-page, #electrical-page, #software-page, #business-page{
+    height: 40vh;
+    background-image: none;
+}
+
 /*----Team page----*/
 .exec *{
     color: white;
@@ -404,7 +409,7 @@ nav .fa{
     border-radius: 10px;
     background-color: #4c2a87;
     margin-bottom: 10px;
-    display: none;
+    display: flex;
 }
 
 .hook-img-col{
@@ -418,39 +423,47 @@ nav .fa{
 .hook-blurb-col{
     flex-basis: 58%;
     background-color: transparent;
+    text-align: center;
 }
 
 .hook-blurb-col h1{
-    text-align: center;
     margin: auto;
     color: white;
     background: transparent;
     font-size: 50px;
 }
 
-/*.exec{
-    width: 80%;
+.hook-blurb-col p{
     margin: auto;
-    text-align: auto;
-    text-align: center;
+    color: white;
+    background: transparent;
+    font-size: 18px;
+    padding: 3%
 }
-
-.exec-col{
-    flex-basis: 24%;
-    max-width: 200px;
-    min-width: 200px;
-    position: relative;
-    overflow: hidden;
-    background: #4c2a87;
-}
-
-.exec-col img{
-    width: 100%;
-    max-width: 200px;
-    position: left;
-}*/
 
 #mechanical-hook img, #electrical-hook img, #software-hook img, #business-hook img{
     width: 100%;
     height: 100%;
+}
+
+#hook-more-btn {
+    background: black;
+}
+
+#hook-more-btn:hover{
+    color: #4c2a87;
+    transition: 1s;
+}
+
+/*Subsystem Pages*/
+.overview{
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+.overview h1{
+    background-color: transparent;
+    font-size: 50px;
+    color: white;
 }

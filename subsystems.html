@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
+            <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>WeMars</title>
+
+        <!--Google Fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Poppins&display=swap" rel="stylesheet">
+        <!--Links css file to html site-->
+        <link rel="stylesheet" href="style.css">
+        <!--Links bootstrapcdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/WeMarsLogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <!--Close icon from Font Awesome icons-->
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">OUR TEAM</a></li>
+                        <div class="dropdown">
+                            <li><a href="subsystems.html">SUBSYSTEMS</a></li>
+                            <div id="dropdown-options">
+                                <a href="">MECHANICAL</a>
+                                <a href="">ELECTRICAL</a>
+                                <a href="">SOFTWARE</a>
+                                <a href="">BUSINESS</a>
+                            </div>
+                        </div>
+                        <li><a href="">SPONSORS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>Subsystems</h1>
+        </section>
+
+        <section class="subsystems-overview">
+            <div class="row">
+                <div class="subsystem-col">
+                    <img src="images/Mechanical/MechanicalTeam.png">
+                    <div class="layer" onclick="showMech()">
+                        <h3>MECHANICAL</h3>
+                    </div>
+                </div>
+                <div class="subsystem-col">
+                    <img src="images/Electrical/ElectricalTeam.png">
+                    <div class="layer" onclick="showElec()">
+                        <h3>ELECTRICAL</h3>
+                    </div>
+                </div>
+                <div class="subsystem-col">
+                    <img src="images/Software/SoftwareTeam.png">
+                    <div class="layer" onclick="showSoft()">
+                        <h3>SOFTWARE</h3>
+                    </div>
+                </div>
+                <div class="subsystem-col">
+                    <img src="images/london.png">
+                    <div class="layer" onclick="showBus()">
+                        <h3>BUSINESS</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="jump"></div>
+        </section>
+
+        <section class="hook-em-in-blurbs">
+            <div id="mechanical-hook">
+                <div class="hook-img-col">
+                    <img src="images/Electrical/ElectricalHook.png">
+                </div>
+                <div class="hook-blurb-col">
+                    <h1>Mechanical</h1>
+                    <div class="header-line"></div>
+                </div>
+            </div>
+            <div id="electrical-hook">
+                <div class="hook-img-col">
+                    <img src="images/Electrical/ElectricalHook.png">
+                </div>
+                <div class="hook-blurb-col">
+                    <h1>Electrical</h1>
+                    <div class="header-line"></div>
+                </div>
+            </div>
+            <div id="software-hook">
+                <div class="hook-img-col">
+                    <img src="images/Electrical/ElectricalHook.png">
+                </div>
+                <div class="hook-blurb-col">
+                    <h1>Software</h1>
+                    <div class="header-line"></div>
+                </div>
+            </div>
+            <div id="business-hook">
+                <div class="hook-img-col">
+                    <img src="images/Electrical/ElectricalHook.png">
+                </div>
+                <div class="hook-blurb-col">
+                    <h1>Business</h1>
+                    <div class="header-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <h2>WE Mars Team</h2>
+            <h3>1151 Richmond St<br>London, ON N6A 3K7</h3>
+            <a href="" class="hero-btn" id="contact-btn">CONTACT US</a>
+            <div class="icons-container">
+                <div class="icons"><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
+                <div class="icons"><a href="https://www.instagram.com/we.mars/"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
+                <div class="icons"><a href="https://www.linkedin.com/company/western-engineering-mars-rover-team/about/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></div>
+            </div>
+            <p>Made by WeMars members</p>
+        </section>
+
+        <section>
+            <p></p>
+        </section>
+        
+        <!--Javascript-->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+            var mechanical = document.getElementById("mechanical-hook");
+            var electrical = document.getElementById("electrical-hook");
+            var software = document.getElementById("software-hook");
+            var business = document.getElementById("business-hook");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+            function showMech(){
+                mechanical.style.display = "flex";
+                electrical.style.display = "none";
+                software.style.display = "none";
+                business.style.display = "none";
+                location.href = "#jump";
+            }
+
+            function showElec(){
+                mechanical.style.display = "none";
+                electrical.style.display = "flex";
+                software.style.display = "none";
+                business.style.display = "none";
+                location.href = "#jump";
+            }
+
+            function showSoft(){
+                mechanical.style.display = "none";
+                electrical.style.display = "none";
+                software.style.display = "flex";
+                business.style.display = "none";
+                location.href = "#jump";
+            }
+
+            function showBus(){
+                mechanical.style.display = "none";
+                electrical.style.display = "none";
+                software.style.display = "none";
+                business.style.display = "flex";
+                location.href = "#jump";
+            }
+
+        </script>
+    </body>
+</html>

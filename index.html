@@ -3,6 +3,7 @@
     <head>
         <!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
             <meta name="viewport" content="with=device-width, initial-scale=1.0">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
         <title>WeMars</title>
 
@@ -18,7 +19,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Poppins" rel="stylesheet">
         <!--Links css file to html site-->
-        <link rel="stylesheet" href="test.css">
+        <link rel="stylesheet" href="style.css">
         <!--Links bootstrapcdn-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
@@ -48,10 +49,47 @@
                 <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
 
-            <div class="text-box">
-                <h1>Welcome to WeMars</h1>
-                <a href="" class="hero-btn">JOIN US!</a>
-            </div>
+<!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+<script type="x-shader/x-vertex" id="vertexshader">
+
+    attribute float size;
+    attribute vec3 customColor;
+    varying vec3 vColor;
+  
+    void main() {
+  
+      vColor = customColor;
+      vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+      gl_PointSize = size * ( 300.0 / -mvPosition.z );
+      gl_Position = projectionMatrix * mvPosition;
+  
+    }
+  
+  </script>
+  <script type="x-shader/x-fragment" id="fragmentshader">
+  
+   uniform vec3 color;
+   uniform sampler2D pointTexture;
+  
+   varying vec3 vColor;
+  
+   void main() {
+  
+     gl_FragColor = vec4( color * vColor, 1.0 );
+     gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+  
+   }
+  </script>
+  <div class = name>
+    <div id="magic"></div>
+  </div>
+<script src="title.js"></script>
+<link rel="stylesheet" type="text/css" href="test.css">
+<!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
+
         </section>
 
         <section class="whoAreWe">

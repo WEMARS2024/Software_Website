@@ -1,114 +1,161 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
-            <meta name="viewport" content="with=device-width, initial-scale=1.0">
 
-        <title>WeMars</title>
+<head>
+    <!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
 
-        <!--Google Fonts link-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Poppins&display=swap" rel="stylesheet">
-        <!--Links css file to html site-->
-        <link rel="stylesheet" href="style.css">
-        <!--Links bootstrapcdn-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <section class="sub-header">
-            <nav>
-                <a href="index.html"><img src="images/WeMarsLogo.png"></a>
-                <div class="nav-links" id="navLinks">
-                    <!--Close icon from Font Awesome icons-->
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="index.html"><span class="top"><span>Home</span></span><span class="bottom"><span>Home</span></span></a></li>
-                        <li><a href="about.html"><span class="top"><span>About</span></span><span class="bottom"><span>About</span></span></a></li>
-                        <li><a href="subsystems.html"><span class="top"><span>Subsystems</span></span><span class="bottom"><span>Subsystems</span></span></a></li>
-                        <li><a href="sponsor.html"><span class="top"><span>Sponsor</span></span><span class="bottom"><span>Sponsor</span></span></a></li>
-                    </ul>
-                </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav>
+    <title>WeMars</title>
 
-            <h1>Our Team</h1>
-        </section>
+    <!--Google Fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <!--Links css file to html site-->
+    <link rel="stylesheet" href="style.css">
+    <!--Links bootstrapcdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-        <section class="exec">
-            <div class="row">
-                <div class="exec-col">
-                    <img src="images/Exec/ProjLead.jfif">
-                    <h1>Clara Levy</h1>
-                    <h4>Project Manager</h4>
-                </div>
-                <div class="exec-col">
-                    <img src="images/Exec/ProjLead.jfif">
-                    <h1>Thomas Naish</h1>
-                    <h4>Vice-Project Manager</h4>
-                </div>
-                <div class="exec-col">
-                    <img src="images/Exec/ProjLead.jfif">
-                    <h1>Wyatt</h1>
-                    <h4>Electrical Lead</h4>
-                </div>
-                <div class="exec-col">
-                    <img src="images/Exec/ElecLead2.jfif">
-                    <h1>Sean McBride</h1>
-                    <h4>Electrical Lead</h4>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/WeMarsLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!--Close icon from Font Awesome icons-->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><span class="top"><span>Home</span></span><span
+                                class="bottom"><span>Home</span></span></a></li>
+                    <li><a href="about.html"><span class="top"><span>About</span></span><span
+                                class="bottom"><span>About</span></span></a></li>
+                    <li><a href="subsystems.html"><span class="top"><span>Subsystems</span></span><span
+                                class="bottom"><span>Subsystems</span></span></a></li>
+                    <li><a href="sponsor.html"><span class="top"><span>Sponsor</span></span><span
+                                class="bottom"><span>Sponsor</span></span></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Our Team</h1>
+    </section>
+
+    <div class="row">
+        <div class="profile">
+            <div class="person">
+                <div class="person__container">
+                    <img class="person__circle" src="images/aboutpage/projleadbg.jpg">
+                    <img class="person__img" id="projLead" src="images/aboutpage/ProjLead-removebg-preview.png" alt="Profile photo">
                 </div>
             </div>
-        </section>
+            <h1>Clara Levy</h1>
+            <h4>Project Manager</h4>
+        </div>
 
-        <section class="exec">
-            <div class="row">
-                <div class="exec-col">
-                    <img src="images/Exec/SoftLead.jfif">
-                    <h1>Abeer Muhammad</h1>
-                    <h4>Programming Lead</h4>
-                </div>
-                <div class="exec-col">
-                    <img src="images/Exec/SoftLead2.jfif">
-                    <h1>Dev Patel</h1>
-                    <h4>Programming Lead</h4>
-                </div>
-                <div class="exec-col">
-                    <img src="images/Exec/ProjLead.jfif">
-                    <h1>Nathan Eng</h1>
-                    <h4>Business Lead</h4>
+        <div class="profile">
+            <div class="person">
+                <div class="person__container">
+                    <img class="person__circle" src="images/aboutpage/software2bg.jpg">
+                    <img class="person__img" src="images/aboutpage/SoftLead2-removebg-preview.png" alt="Profile photo">
                 </div>
             </div>
-        </section>
+            <h1>Thomas Nalsh</h1>
+            <h4>Vice-Project Manager</h4>
+        </div>
 
-        <section class="footer">
-            <h2>WE Mars Team</h2>
-            <h3>1151 Richmond St<br>London, ON N6A 3K7</h3>
-            <a href="" class="hero-btn" id="contact-btn">CONTACT US</a>
-            <div class="icons-container">
-                <div class="icons"><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
-                <div class="icons"><a href="https://www.instagram.com/we.mars/"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                <div class="icons"><a href="https://www.linkedin.com/company/western-engineering-mars-rover-team/about/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></div>
+        <div class="profile">
+            <div class="person">
+                <div class="person__container">
+                    <img class="person__circle" src="images/aboutpage/software2bg.jpg">
+                    <img class="person__img" src="timages/aboutpageest/SoftLead2-removebg-preview.png" alt="Profile photo">
+                </div>
             </div>
-            <p>Made by WeMars members</p>
-        </section>
+            <h1>Wyat</h1>
+            <h4>Electrical Lead</h4>
+        </div>
 
-        <section>
-            <p></p>
-        </section>
-        
-        <!--Javascript for Toggle Menu-->
-        <script>
+        <div class="profile">
+            <div class="person">
+                <div class="person__container">
+                    <img class="person__circle" src="images/aboutpage/elec2bg.jpg">
+                    <img class="person__img" src="images/aboutpage/ElecLead2-removebg-preview.png" alt="Profile photo">
+                </div>
+            </div>
+            <h1>Sean McBride</h1>
+            <h4>Programming Lead</h4>
+        </div>
+    </div>
 
-            var navLinks = document.getElementById("navLinks");
+    <div class="row">
+        <div class="profile">
+            <div class="person">
+                <div class="person__container">
+                    <img class="person__circle" src="images/aboutpage/softwarebg.avif">
+                    <img class="person__img" src="images/aboutpage/SoftLead-removebg-preview.png" alt="Profile photo">
+                </div>
+            </div>
+            <h1>Abeer Muhammad</h1>
+            <h4>Programming Lead</h4>
+        </div>
 
-            function showMenu(){
-                navLinks.style.right = "0";
-            }
+        <div class="profile">
+            <div class="person">
+                <div class="person__container">
+                    <img class="person__circle" src="images/aboutpage/software2bg.jpg">
+                    <img class="person__img" src="images/aboutpage/SoftLead2-removebg-preview.png" alt="Profile photo">
+                </div>
+            </div>
+            <h1>Dev Patel</h1>
+            <h4>Programming Lead</h4>
+        </div>
 
-            function hideMenu(){
-                navLinks.style.right = "-200px";
-            }
+        <div class="profile">
+            <div class="person">
+                <div class="person__container">
+                    <img class="person__circle" src="images/aboutpage/software2bg.jpg">
+                    <img class="person__img" src="images/aboutpage/SoftLead2-removebg-preview.png" alt="Profile photo">
+                </div>
+            </div>
+            <h1>Natahn Eng</h1>
+            <h4>Programming Lead</h4>
+        </div>
+    </div>
 
-        </script>
-    </body>
+    <section class="footer">
+        <h2>WE Mars Team</h2>
+        <h3>1151 Richmond St<br>London, ON N6A 3K7</h3>
+        <a href="" class="hero-btn" id="contact-btn">CONTACT US</a>
+        <div class="icons-container">
+            <div class="icons"><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
+            <div class="icons"><a href="https://www.instagram.com/we.mars/"><i
+                        class="fa-brands fa-instagram fa-2xl"></i></a></div>
+            <div class="icons"><a href="https://www.linkedin.com/company/western-engineering-mars-rover-team/about/"><i
+                        class="fa-brands fa-linkedin fa-2xl"></i></a></div>
+        </div>
+        <p>Made by WeMars members</p>
+    </section>
+
+    <section>
+        <p></p>
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
 </html>

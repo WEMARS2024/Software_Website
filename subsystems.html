@@ -20,8 +20,6 @@
             <nav>
                 <a href="index.html"><img src="images/WeMarsLogo.png"></a>
                 <div class="nav-links" id="navLinks">
-                    <!--Close icon from Font Awesome icons-->
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="index.html"><span class="top"><span>Home</span></span><span class="bottom"><span>Home</span></span></a></li>
                         <li><a href="about.html"><span class="top"><span>About</span></span><span class="bottom"><span>About</span></span></a></li>
@@ -29,7 +27,6 @@
                         <li><a href="sponsor.html"><span class="top"><span>Sponsor</span></span><span class="bottom"><span>Sponsor</span></span></a></li>
                     </ul>
                 </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
 
             <h1>Subsystems</h1>
@@ -56,6 +53,11 @@
     <card
         data-image="images/Buis/lilBuisDudes.webp">
         <h1 slot="header">Buisness</h1>
+        <p slot="content" class="aboutblurb">Our software team is central to our university's rover project, handling both the development of the code that drives the rover and the design of the homebase interface. This dashboard is crucial for interpreting the data from our onboard sensors, enabling our team to monitor and guide the rover effectively. With tools like GPS for accurate tracking, cameras for live visuals, and a LiDAR system for assessing terrain depths, we're equipped to handle challenges in real-time. This project showcases our commitment to technological innovation.</p>
+    </card>
+    <card
+        data-image="images/Science/sciencecard.webp">
+        <h1 slot="header">Science</h1>
         <p slot="content" class="aboutblurb">Our software team is central to our university's rover project, handling both the development of the code that drives the rover and the design of the homebase interface. This dashboard is crucial for interpreting the data from our onboard sensors, enabling our team to monitor and guide the rover effectively. With tools like GPS for accurate tracking, cameras for live visuals, and a LiDAR system for assessing terrain depths, we're equipped to handle challenges in real-time. This project showcases our commitment to technological innovation.</p>
     </card>
 </div>

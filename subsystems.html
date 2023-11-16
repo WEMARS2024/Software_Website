@@ -35,147 +35,32 @@
             <h1>Subsystems</h1>
         </section>
 
-        <section class="subsystems-overview">
-            <div class="row">
-                <div class="subsystem-col">
-                    <img src="images/Mechanical/MechanicalTeam.png">
-                    <div class="layer" onclick="showMech()">
-                        <h3>MECHANICAL</h3>
-                    </div>
-                </div>
-                <div class="subsystem-col">
-                    <img src="images/Electrical/ElectricalTeam.png">
-                    <div class="layer" onclick="showElec()">
-                        <h3>ELECTRICAL</h3>
-                    </div>
-                </div>
-                <div class="subsystem-col">
-                    <img src="images/Software/SoftwareTeam.png">
-                    <div class="layer" onclick="showSoft()">
-                        <h3>SOFTWARE</h3>
-                    </div>
-                </div>
-                <div class="subsystem-col">
-                    <img src="images/london.png">
-                    <div class="layer" onclick="showBus()">
-                        <h3>BUSINESS</h3>
-                    </div>
-                </div>
-            </div>
-            <div id="jump"></div>
-        </section>
 
-        <section class="hook-em-in-blurbs">
-            <div id="mechanical-hook">
-                <div class="hook-img-col">
-                    <img src="images/Electrical/ElectricalHook.png">
-                </div>
-                <div class="hook-blurb-col">
-                    <h1>Mechanical</h1>
-                    <div class="header-line"></div>
-                    <p>The mechanical team is responsible for building a rover frame capable of navigating desert-like terrain while being able
-                        to use dexterous arms that uses sensors and actuators to complete the competition tasks.
-                    </p>
-                    <a href="" class="hero-btn" id="hook-more-btn">LEARN MORE</a>
-                </div>
-            </div>
-            <div id="electrical-hook">
-                <div class="hook-img-col">
-                    <img src="images/Electrical/ElectricalHook.png">
-                </div>
-                <div class="hook-blurb-col">
-                    <h1>Electrical</h1>
-                    <div class="header-line"></div>
-                    <a href="" class="hero-btn" id="hook-more-btn">LEARN MORE</a>
-                </div>
-            </div>
-            <div id="software-hook">
-                <div class="hook-img-col">
-                    <img src="images/Electrical/ElectricalHook.png">
-                </div>
-                <div class="hook-blurb-col">
-                    <h1>Software</h1>
-                    <div class="header-line"></div>
-                    <a href="" class="hero-btn" id="hook-more-btn">LEARN MORE</a>
-                </div>
-            </div>
-            <div id="business-hook">
-                <div class="hook-img-col">
-                    <img src="images/Electrical/ElectricalHook.png">
-                </div>
-                <div class="hook-blurb-col">
-                    <h1>Business</h1>
-                    <div class="header-line"></div>
-                    <a href="" class="hero-btn" id="hook-more-btn">LEARN MORE</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="footer">
-            <h2>WE Mars Team</h2>
-            <h3>1151 Richmond St<br>London, ON N6A 3K7</h3>
-            <a href="" class="hero-btn" id="contact-btn">CONTACT US</a>
-            <div class="icons-container">
-                <div class="icons"><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
-                <div class="icons"><a href="https://www.instagram.com/we.mars/"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                <div class="icons"><a href="https://www.linkedin.com/company/western-engineering-mars-rover-team/about/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></div>
-            </div>
-            <p>Made by WeMars members</p>
-        </section>
-
-        <section>
-            <p></p>
-        </section>
+<div id="app" class="aboutcontainer">
+    
+    <card
+        data-image="images/Mechanical/simple-mechanical-projects.webp">
+        <h1 slot="header">Mechanical</h1>
+        <p slot="content" class="aboutblurb">The WE Mars electrical team uses Altium software to design all of the electrical systems used on the Rover. From the most basic usb connecter to the more complex motor control and CAN Bus boards they are all designed and soldered together by the WE Mars electrical team. All the electrical control and design used on our rover is constructed by our electrical team.</p>
+    </card>
+    <card
+        data-image="images/Electrical/electricalLilDudes.webp">
+        <h1 slot="header">Electrical</h1>
+        <p slot="content" class="aboutblurb">The WE Mars electrical team uses Altium software to design all of the electrical systems used on the Rover. From the most basic usb connector to the more complex motor control and CAN Bus boards they are all designed and soldered together by the WE Mars electrical team. All the electrical control and design used on our rover is constructed by our electrical team.</p>
+    </card>
+    <card
+        data-image="images/Software/softwareLilDude.webp">
+        <h1 slot="header">Software</h1>
+        <p slot="content" class="aboutblurb">Our software team is central to our university's rover project, handling both the development of the code that drives the rover and the design of the homebase interface. This dashboard is crucial for interpreting the data from our onboard sensors, enabling our team to monitor and guide the rover effectively. With tools like GPS for accurate tracking, cameras for live visuals, and a LiDAR system for assessing terrain depths, we're equipped to handle challenges in real-time. This project showcases our commitment to technological innovation.</p>
+    </card>
+    <card
+        data-image="images/Buis/lilBuisDudes.webp">
+        <h1 slot="header">Buisness</h1>
+        <p slot="content" class="aboutblurb">Our software team is central to our university's rover project, handling both the development of the code that drives the rover and the design of the homebase interface. This dashboard is crucial for interpreting the data from our onboard sensors, enabling our team to monitor and guide the rover effectively. With tools like GPS for accurate tracking, cameras for live visuals, and a LiDAR system for assessing terrain depths, we're equipped to handle challenges in real-time. This project showcases our commitment to technological innovation.</p>
+    </card>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="subsystem.js"></script>
         
-        <!--Javascript-->
-        <script>
-
-            var navLinks = document.getElementById("navLinks");
-            var mechanical = document.getElementById("mechanical-hook");
-            var electrical = document.getElementById("electrical-hook");
-            var software = document.getElementById("software-hook");
-            var business = document.getElementById("business-hook");
-
-            function showMenu(){
-                navLinks.style.right = "0";
-            }
-
-            function hideMenu(){
-                navLinks.style.right = "-200px";
-            }
-
-            function showMech(){
-                mechanical.style.display = "flex";
-                electrical.style.display = "none";
-                software.style.display = "none";
-                business.style.display = "none";
-                location.href = "#jump";
-            }
-
-            function showElec(){
-                mechanical.style.display = "none";
-                electrical.style.display = "flex";
-                software.style.display = "none";
-                business.style.display = "none";
-                location.href = "#jump";
-            }
-
-            function showSoft(){
-                mechanical.style.display = "none";
-                electrical.style.display = "none";
-                software.style.display = "flex";
-                business.style.display = "none";
-                location.href = "#jump";
-            }
-
-            function showBus(){
-                mechanical.style.display = "none";
-                electrical.style.display = "none";
-                software.style.display = "none";
-                business.style.display = "flex";
-                location.href = "#jump";
-            }
-
-        </script>
     </body>
 </html>

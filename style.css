@@ -514,11 +514,83 @@ nav .fa{
   transform:  scale(1) translateY(-1.25rem)
 }
 
+#sciencelead {
+
+  transform: scale(0.9);
+  bottom: -35px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #sciencelead{
+  transform:  scale(1) translateY(-1.25rem)
+}
+
+#buislead {
+
+  transform: scale(1.4);
+  bottom: -30px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #buislead{
+  transform:  scale(1.5) translateY(-1.25rem)
+}
+
+#eleclead {
+
+  transform: scale(1.4);
+  bottom: -40px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #eleclead{
+  transform:  scale(1.5) translateY(-1.25rem)
+}
+
+#projlead2 {
+
+  transform: scale(1.4);
+  bottom: -50px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #projlead2{
+  transform:  scale(1.5) translateY(-1.25rem)
+}
+
+#mechlead {
+
+  transform: scale(0.9);
+  bottom: -75px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #mechlead{
+  transform:  scale(1) translateY(-1.25rem)
+}
+
+#mechlead2 {
+
+  transform: scale(1.4);
+  bottom: -75px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #mechlead2{
+  transform:  scale(1.5) translateY(-1.25rem)
+}
+
+#scilead {
+
+  transform: scale(1.4);
+  bottom: -8px;
+  right: 10px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #scilead{
+  transform:  scale(1.5) translateY(-1.25rem)
+}
+
 /*Subsystem Section*/
 
 .aboutblurb {
   line-height: 1.5em;
   background: transparent;
+  font-family: 'Handjet';
 }
 
 
@@ -623,7 +695,7 @@ nav .fa{
 }
 
 .card-info h1 {
-  font-family: "Playfair Display";
+  font-family: "Handjet";
   font-size: 36px;
   font-weight: 700;
   background: transparent;

@@ -52,6 +52,7 @@ h1, h2, h3, h4, a {
   border: 2px solid;
   border-radius: 2px;
   animation: jumpInfinite 3.5s infinite;
+  color: white;
 }
 
 .down-arrow:after {

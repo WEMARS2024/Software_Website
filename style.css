@@ -427,7 +427,7 @@ nav img{
 }
 
 .person__container:hover {
-  transform: scale(1.1)
+  transform: scale(1.101)
 }
 
 .person__img {

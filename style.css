@@ -676,6 +676,12 @@ nav img{
   letter-spacing: 6px;
 }
 
+.sponsorship-package-div {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
 .contact-wrapper {
   display: flex;
   flex-direction: row;
@@ -814,7 +820,11 @@ textarea {
   border: 1px solid #fff;
 }
 
-
+.sponsor-p {
+  font-family: 'Handjet';
+  font-size: 20px;
+  color: white;
+}
 
 
 .social-media-list li i {

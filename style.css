@@ -89,7 +89,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  width: 90vw;
+  width: 100vw;
   position: fixed;
   z-index: 5;
   vertical-align: bottom;
@@ -972,4 +972,499 @@ textarea.form-control{
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+
+/*Progress page styling*/
+
+
+/*
+.p-section1 {
+  position: relative;
+  top: 100px;
+  margin: auto;
+  text-align: center;
+  text-align: auto;
+
+}
+
+.p-div1 {
+  height: 200px;
+}
+
+.p-div1 p {
+  width: 80%;
+  margin-top: 2%;
+  margin: auto;
+  position: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: #4c2a87;
+}
+
+/*old stuff^*/
+
+/*type1*/
+
+.p-section1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+  text-align: center;
+}
+
+.p-div1 h2{
+  color: #fff;
+  font-size: 36px;
+  text-align: auto;
+  text-align: center;
+  background: transparent;
+  border-radius: 10px
+}
+
+.p-div1 p {  
+  color: #fff;
+  font-size: 15px;
+  background: transparent;
+}
+
+.p-div1 {
+  width: 80%;
+  margin-top: 2%;
+  margin: auto;
+  position: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: #4c2a87;
+}
+
+.p-headerline {
+  display: block;
+  width: 150px;
+  height: 6px;
+  background: white;
+  margin: 15px auto;
+  border-radius: 10px;
+  
+}
+
+.header-p{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/TeamPicSub.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.header-p h1{
+  position: relative;
+  font-size: 80px;
+  top: 200px;
+  text-align: center;
+  background-color: transparent;
+}
+
+/*gallery*/
+
+.image-1{
+  border: 2px solid #4c2a87;
+  width: 25%;
+  display: inline-block;
+  padding: 5px;
+  margin: 50px;
+  background: #4c2a87;
+  border-radius: 10px;
+}
+
+.image-1 img{
+  width: 100%;
+  height: auto;
+  
+}
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+
+}
+
+.desc-1 {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  margin: auto;
+
+}
+
+.image-1:hover {
+  transform: scale(1.02);
+  transition: all 0.5s;
+}
+
+
+
+/*type2*/
+
+.type-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  margin-top: 2%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #4c2a87;
+  width: 30%;
+  height: auto;
+
+}
+
+.container p{
+  color: white;
+  background: #4c2a87;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h2{
+  font: 30px;
+  color: white;
+  background: #4c2a87;
+  text-align: center;
+}
+
+.bar{
+  display: block;
+  width: 150px;
+  height: 6px;
+  background: white;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+.type-2 img{
+  border: white solid 2px;
+  border-radius: 5px;
+  max-width: 100%;
+  border-radius: 10px;
+
+}
+
+.image-container{
+  background-color: #693EB2;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+
+/*slideshow*/
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border: #4c2a87 5px solid;
+  border-radius: 5px;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #4c2a87;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #4c2a87;
+  font-size: 15px;
+  padding: 8px 0px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: #4c2a87;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+/*adding responsive nav bar*/
+
+@media screen and (max-width: 800px){
+  
+  .d-nav{
+    display: none;
+  }
+
+  .m-nav{
+    border-bottom: white solid 2px;
+  
+    
+  }
+
+  .logo {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+  }
+
+  .responsive-nav {
+    overflow: hidden;
+    position: relative;
+    padding: 10px 10px;
+  }
+
+  .bar{
+    display: none;
+    height: auto;
+  }
+  
+  .responsive-nav a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: left;
+    border: black solid 2px;
+  }
+
+  .responsive-nav a.icon{
+    background: black;
+    display: block;
+    position: relative;
+  }
+
+  .bar a:hover{
+    color: white;
+    background: #4c2a87;
+    border-radius: 10px;
+  }
+
+  .active{
+    color: white;
+  }
+
+  #magic {
+    display: none;
+  }
+
+  .team-photo{
+    display: none;
+  }
+
+  .f-m{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .f-m img{
+    max-width: 450px;
+    width: 85%;
+    border: white solid 2px;
+    border-radius: 20px;
+    position: relative;
+    top: 140px;
+    margin: 20px 0px;
+    height: auto;
+
+  }
+
+  section.header{
+    background: black;
+  }
+
+
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adjust this value for spacing between profiles */
+    padding-bottom: 50px
+  }
+  
+  
+  .profile{
+    flex: 1;
+    width: 10vh;
+    text-align: center;
+  }
+  
+  .profile h1 {
+    padding-top: 20px;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .profile h4 {
+    font-size: 8px;
+    color: white;
+  }
+  
+  .person {
+    max-width: 15rem;
+    margin-inline: auto;
+    position: relative;
+    height: auto;
+  }
+  
+  .person__circle {
+    position: absolute;
+    inset: auto 0 0;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+    margin-inline: auto;
+    border-radius: 50%;
+    height: auto;
+  }
+  
+  .person__container {
+    aspect-ratio: 1 / 1.35;
+    display: grid;
+    align-items: end;
+    border-radius: 0 0 100vw 100vw;
+    overflow: hidden;
+
+  }
+
+    
+  .aboutblurb {
+    line-height: 1.5em;
+    background: transparent;
+    font-family: 'Handjet';
+    font-size: 15px;
+  }
+
+  .image-1{
+    border: 2px solid #4c2a87;
+    width: 25%;
+    display: block;
+    padding: 5px;
+    margin: 50px;
+    background: #4c2a87;
+    border-radius: 10px;
+  }
+  
+  .image-1 img{
+    
+    
+    
+    
+  }
+  
+  .gallery{
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .desc-1 {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-size: 8px;
+  
+  }
+
+
+}
+
+
+@media screen and (min-width: 801px){
+  
+  .m-nav {
+    display: none;
+  }
+
+  .mobile-format{
+    display: none;
+  }
+
+
+
+}
 

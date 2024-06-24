@@ -32,9 +32,25 @@
                     <ul>
                         <li><a href="index.html"><span class="top"><span>Home</span></span><span class="bottom"><span>Home</span></span></a></li>
                         <li><a href="about.html"><span class="top"><span>About</span></span><span class="bottom"><span>About</span></span></a></li>
-                        <li><a href="subsystems.html"><span class="top"><span>Subsystems</span></span><span class="bottom"><span>Subsystems</span></span></a></li>
+                        <li><a href="subsystems.html"><span class="top"><span>Subsystems</span></span><span class="bottom"><span>Subsystems</span></span></a></li>\
+                        <li><a href="progress.html"><span class="top"><span>Progress</span></span><span class="bottom"><span>Progress</span></a></li>
                         <li><a href="sponsor.html"><span class="top"><span>Sponsor</span></span><span class="bottom"><span>Sponsor</span></span></a></li>
                     </ul>
+                </div>
+            </nav>
+
+            <nav class="m-nav">
+
+                <div class="responsive-nav">
+                    <img src="images/WeMarsLogo.png" class="logo">
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+                    <div class="bar" id="myLinks">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="subsystems.html">Subsystems</a>
+                        <a href="progress.html">Progress</a>
+                        <a href="sponsor.html">Sponsor</a>
+                    </div>
                 </div>
             </nav>
 
@@ -75,6 +91,19 @@
   <div class = name>
     <div id="magic"></div>
   </div>
+  
+  <!--Mobile Formatting-->
+  <section class="mobile-format">
+    <div class="f-m">
+        <img src="images/TeamPhotoSub.png">
+    </div>
+
+    <div class="f-m">
+        <img src="images\Wemars members.jpg">
+    </div>
+
+    </section>
+
   <div class="down-arrow"></div>
 <script src="title.js"></script>
 <!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
@@ -95,6 +124,8 @@
         <section class="team-photo">
             <img src="images/TeamPhotoSub.png">
         </section>
+
+        
         
         <section class="goal">
             <div class="indexBlurbBox">
@@ -107,7 +138,7 @@
         <section class="footer">
             <h2>WE Mars Team</h2>
             <h3>1151 Richmond St<br>London, ON N6A 3K7</h3>
-            <a href="" class="hero-btn" id="contact-btn">CONTACT US</a>
+            <a href="sponsor.html" class="hero-btn" id="contact-btn">CONTACT US</a>
             <div class="icons-container">
                 <div class="icons"><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
                 <div class="icons"><a href="https://www.instagram.com/we.mars/"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
@@ -134,5 +165,19 @@
             }
 
         </script>
+
+        <script>
+
+            function toggleMenu() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+        </script>
+
     </body>
 </html>

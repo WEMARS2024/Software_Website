@@ -360,12 +360,13 @@ nav img{
   color: #fff;
 }
 
-.sub-header h1{
+.sub-header h1 {
   position: relative;
   font-size: 80px;
   top: 200px;
   text-align: center;
   background-color: transparent;
+  z-index: 1;
 }
 
 #mechanical-page, #electrical-page, #software-page, #business-page{
@@ -375,6 +376,8 @@ nav img{
 
 /*----Team page----*/
 .row {
+  position: relative;
+  left: -1%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,11 +388,14 @@ nav img{
 
 .profile {
   flex: 1; 
-  margin: 3rem;
+  margin: 0rem 6rem 2rem 6rem;
   width: 20vh;
   text-align: center;
+  z-index: 0;
   
 }
+
+
 
 .profile h1 { /*limit the text overflow*/
   padding-top: 20px;
@@ -405,9 +411,7 @@ nav img{
 .person {
   max-width: 15rem;
   min-width: 10rem; 
-  min-height: 5rem; /*test - limit the person from shrinking too much */
   margin-inline: auto;
-  /*margin: 0rem; /* fix the flex issue the one big profile mid flex */
   position: relative;
 }
 
@@ -420,6 +424,7 @@ nav img{
   width: 100%;
   /*margin-inline: auto; /*Check this*/
   border-radius: 50%;
+
 }
 
 .person__container {

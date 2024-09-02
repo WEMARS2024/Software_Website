@@ -378,18 +378,20 @@ nav img{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px; /* Adjust this value for spacing between profiles */
+  flex-wrap: wrap;
+  gap: 15px; /*Adjust this value for spacing between profiles */
   padding-bottom: 50px
 }
 
-
-.profile{
-  flex: 1;
+.profile {
+  flex: 1; 
+  margin: 3rem;
   width: 20vh;
   text-align: center;
+  
 }
 
-.profile h1 {
+.profile h1 { /*limit the text overflow*/
   padding-top: 20px;
   font-size: 40px;
   color: white;
@@ -402,17 +404,21 @@ nav img{
 
 .person {
   max-width: 15rem;
+  min-width: 10rem; 
+  min-height: 5rem; /*test - limit the person from shrinking too much */
   margin-inline: auto;
+  /*margin: 0rem; /* fix the flex issue the one big profile mid flex */
   position: relative;
 }
 
 .person__circle {
   position: absolute;
+  min-width: 5rem;
   inset: auto 0 0;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   width: 100%;
-  margin-inline: auto;
+  /*margin-inline: auto; /*Check this*/
   border-radius: 50%;
 }
 
@@ -437,8 +443,6 @@ nav img{
   transform: scale(1.4);
   transition: transform 250ms ease-in-out
 }
-
-
 
 .person__container:hover .person__img{
   transform:  scale(1.5) translateY(-1.5rem)

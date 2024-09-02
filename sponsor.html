@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<head>
+    <!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+    <title>WeMars</title>
+
+    <!--Google Fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <!--Links css file to html site-->
+    <link rel="stylesheet" href="style.css">
+    <!--Links bootstrapcdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/WeMarsLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!--Close icon from Font Awesome icons-->
+                <ul>
+                    <li><a href="index.html"><span class="top"><span>Home</span></span><span
+                                class="bottom"><span>Home</span></span></a></li>
+                    <li><a href="about.html"><span class="top"><span>About</span></span><span
+                                class="bottom"><span>About</span></span></a></li>
+                    <li><a href="subsystems.html"><span class="top"><span>Subsystems</span></span><span
+                                class="bottom"><span>Subsystems</span></span></a></li>
+                    <li><a href="progress.html"><span class="top"><span>Progress</span></span><span 
+                                class="bottom"><span>Progress</span></a></li>
+                    <li><a href="sponsor.html"><span class="top"><span>Sponsor</span></span><span
+                                class="bottom"><span>Sponsor</span></span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Sponsors</h1>
+
+        <nav class="m-nav">
+            <div class="responsive-nav">
+                <img src="images/WeMarsLogo.png" class="logo">
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+                <div class="bar" id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="subsystems.html">Subsystems</a>
+                    <a href="progress.html">Progress</a>
+                    <a href="sponsor.html">Sponsor</a>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    <div>
+        <h1 class="section-header">Sponsorship Package</h1>
+        <div class="sponsorship-package-div">
+            <embed src="images/WEMARS_Sponsor_Package.pdf" width="700" height="800" type="application/pdf">
+        </div>
+    </div>
+
+    <section id="contact">
+
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("Gw8QSvCrSmX3V613c");
+            })();
+        </script>
+
+        <h1 class="section-header">Contact Us!</h1>
+
+        <div class="contact-wrapper">
+
+            <!-- Left contact page -->
+
+            <form id="contact-form" class="form-horizontal" role="form">
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
+                            required>
+                    </div>
+                </div>
+
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                    <div class="alt-send-button">
+                        <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                    </div>
+
+                </button>
+
+            </form>
+
+            <!-- Left contact page -->
+
+            <div class="direct-contact-container">
+
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">London,
+                                Ontario</span></i></li>
+
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                                    href="mailto:wemars@uwo.ca"
+                                    title="Send me an email">wemars@uwo.ca</a></span></i></li>
+
+                </ul>
+
+                <hr>
+                <ul class="social-media-list">
+                    <li><a href="https://www.instagram.com/we.mars/" target="_blank" class="contact-icon">
+                            <i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/company/western-engineering-mars-rover-team/" target="_blank" class="contact-icon">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <h2>WE Mars Team</h2>
+        <h3>1151 Richmond St<br>London, ON N6A 3K7</h3>
+        <a href="" class="hero-btn" id="contact-btn">CONTACT US</a>
+        <div class="icons-container">
+            <div class="icons"><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
+            <div class="icons"><a href="https://www.instagram.com/we.mars/"><i
+                        class="fa-brands fa-instagram fa-2xl"></i></a></div>
+            <div class="icons"><a href="https://www.linkedin.com/company/western-engineering-mars-rover-team/about/"><i
+                        class="fa-brands fa-linkedin fa-2xl"></i></a></div>
+        </div>
+        <p>Made by WeMars members</p>
+    </section>
+
+    <section>
+        <p></p>
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    <script src="email.js"></script>
+    <script>
+
+        function toggleMenu() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

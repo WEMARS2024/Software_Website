@@ -1315,7 +1315,7 @@ textarea.form-control{
 .m-card {
   width: 90vw; 
   height: 90vh; 
-  background-color: white; 
+  background-color: #e0e0de; 
   border-radius: 20px; 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
   display: flex; 
@@ -1325,9 +1325,17 @@ textarea.form-control{
   position: fixed; 
   top: 50%; 
   left: 50%; 
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%) scale(0.9); 
   z-index: 1000; 
-  display: none; 
+  opacity: 0; 
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.m-card.active {
+  opacity: 1;
+  visibility: visible; 
+  transform: translate(-50%, -50%) scale(1); 
 }
 
 .close-btn {
@@ -1335,17 +1343,95 @@ textarea.form-control{
   top: 10px;
   right: 20px;
   background-color: transparent;
-  color: black;
   border: none;
-  font-size: 24px;
   cursor: pointer;
   z-index: 1001;
+  background-color: #e0e0de;
+  margin-top: 0.5%;
 }
 
-.close-btn:hover {
-  color: red; 
+.close-btn svg {
+  width: 24px; 
+  height: 24px;
+  stroke: black; 
+  transition: stroke 0.2s ease;
+  background-color: #e0e0de;
+  margin-top: 0.5%;
 }
 
+.close-btn:hover svg {
+  stroke: #f94449; 
+  background-color: #e0e0de;
+  margin-top: 0.5%;
+}
+
+.m-card-content {
+  width: 100%;
+  text-align: center;
+  background-color: #e0e0de;
+}
+
+.m-card-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  background-color: #e0e0de;
+}
+
+.m-card-content p{
+  background-color: #e0e0de;
+}
+
+.m-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #e0e0de;
+}
+
+.m-card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  background-color: #e0e0de;
+}
+
+.m-card-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #e0e0de;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.m-card-images img {
+  width: 48%; 
+  height: auto; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  z-index: 999; /* Ensure it's behind the card but above the rest of the page */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
 
 //Subsystems New Styling
 

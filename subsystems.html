@@ -89,13 +89,58 @@
             </div>
 
 
+            <div class="subcontent">
+                <div class="subimages">
+                     <img src = "./images/Buis/business-charts.avif">
+                </div>
+                <div class = "subtext-box">
+                    <h3>Business</h3>
+                    <p>Yellow Jack lateen sail grog draft no prey, no pay squiffy hail-shot Sink me chandler lanyard. Hail-shot loaded to the gunwalls barkadeer landlubber or just lubber Blimey bilge ballast yard cutlass trysail. Sheet Jack Tar Sea Legs lanyard starboard pink Gold Road scuttle long boat doubloon.
+                        Weigh anchor pink Admiral of the Black Barbary Coast draught rum gangway rutters doubloon lugger. Prow Letter of Marque starboard long clothes crow's nest barkadeer lee Arr aft heave to. Lanyard Sink me lugsail squiffy topmast scourge of the seven seas mutiny jib jolly boat tack.
+                        </p>
+                </div>
+            </div>
+
+
+            <div class="subcontent">
+                <div class="subimages">
+                     <img src = "./images/Science/sci-sub-photo.png">
+                </div>
+                <div class = "subtext-box">
+                    <h3>Science</h3>
+                    <p>Yellow Jack lateen sail grog draft no prey, no pay squiffy hail-shot Sink me chandler lanyard. Hail-shot loaded to the gunwalls barkadeer landlubber or just lubber Blimey bilge ballast yard cutlass trysail. Sheet Jack Tar Sea Legs lanyard starboard pink Gold Road scuttle long boat doubloon.
+                        Weigh anchor pink Admiral of the Black Barbary Coast draught rum gangway rutters doubloon lugger. Prow Letter of Marque starboard long clothes crow's nest barkadeer lee Arr aft heave to. Lanyard Sink me lugsail squiffy topmast scourge of the seven seas mutiny jib jolly boat tack.
+                        </p>
+                </div>
+            </div>
+
+
         </div>
     </section>
 </div>
 
+
+<div class="overlay" id="overlay"></div>
 <div class="m-card" id="Mechanical">
-    <div id="m-container">
-        <button class="close-btn" onclick="toggleMechCard()">X</button>
+    <button class="close-btn" onclick="toggleMechCard()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+    <div class="m-card-content">
+        <h2>Mechanical Subsystem</h2>
+        <div class="m-card-body">
+            <div class="m-card-text">
+                <p>This is a brief description of the mechanical subsystem, outlining the main components and their functions. You can add more details here about the design, materials, and purpose of each part.</p>
+            </div>
+            <div class="m-card-images">
+                <img src="./images/Mechanical/mech1.png" alt="Mechanical Subsystem">
+                <img src="./images/Mechanical/mech1.png" alt="Mechanical Details">
+            </div>
+            <div class="m-card-text">
+                <p>Additional text can be placed here, providing more context or details about the subsystem. You might also include specifications, challenges, or future work here.</p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -114,12 +159,10 @@
         }
 
         function toggleMechCard() {
-            var x = document.getElementById("Mechanical");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+            var card = document.getElementById("Mechanical");
+            var overlay = document.getElementById("overlay");
+            card.classList.toggle("active"); 
+            overlay.classList.toggle("active");
         }
 
         function toggleElecCard() {

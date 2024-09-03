@@ -346,6 +346,7 @@ nav img{
   display: flex;
   justify-content: space-between;
   width: 20%;
+  min-width: 10%;
   padding: 30px;
 }
 
@@ -452,6 +453,38 @@ nav img{
 .person__container:hover .person__img{
   transform:  scale(1.5) translateY(-1.5rem)
 }
+
+.teamfooter * {
+  background: transparent;
+  color: white;
+}
+
+.teamfooter {
+  position: absolute;
+
+  text-align: center;
+  width: 100vw;
+  margin-top: 2%;
+  margin: auto;
+  position: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: #4c2a87;
+}
+
+.teamfooter h2 {
+  padding-top: 10px;
+  font-size: 30px;
+  margin: auto;
+}
+
+.teamfooter h3 {
+  padding: 20px;
+  font-size: 20px;
+  margin: auto;
+}
+
+
 
 /* added to fix individual pics*/
 #projLead {

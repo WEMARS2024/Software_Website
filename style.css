@@ -378,7 +378,7 @@ nav img{
 /*----Team page----*/
 .row {
   position: relative;
-  left: -1%;
+  left: 0%;
   display: flex;
   justify-content: center;
   align-items: center;

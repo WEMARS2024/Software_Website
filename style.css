@@ -1,4 +1,4 @@
-*{
+*{toggleMenu
   margin: 0;
   padding: 0;
   background: black;
@@ -132,7 +132,7 @@ nav img{
   color: white;
   padding: 2px 30px;
   display: inline-block;
-  width: 125px;
+  width: 130px;
   overflow: hidden;
 }
 
@@ -238,6 +238,10 @@ nav img{
   .nav-links ul{
       padding: 30px;
   }
+
+  .nav-img (
+      padding: 30px;
+  )
 }
 
 /*Blurbs Section*/
@@ -448,7 +452,7 @@ nav img{
 #projLead {
 
   transform: scale(0.9);
-  bottom: -20px;
+  bottom: -60px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #projLead{
@@ -457,42 +461,83 @@ nav img{
 
 #sciencelead {
 
-  transform: scale(0.9);
-  bottom: -35px;
+  transform: scale(1.2);
+  bottom: -20px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #sciencelead{
-  transform:  scale(1) translateY(-1.25rem)
+  transform:  scale(1.4) translateY(-1.25rem)
 }
+
+#softlead {
+  transform: scale(0.95);
+  right: 2px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #softlead{
+  transform:  scale(1.1) translateY(-1.25rem)
+}
+
+#softlead2 {
+  transform: scale(1.2);
+  bottom: -20px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #softlead2{
+  transform:  scale(1.4) translateY(-1.25rem)
+}
+
 
 #buislead {
 
   transform: scale(1.4);
-  bottom: -30px;
+  bottom: -20px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #buislead{
   transform:  scale(1.5) translateY(-1.25rem)
 }
 
+#buislead2 {
+
+  transform: scale(1.2);
+  bottom: -20px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #buislead2{
+  transform:  scale(1.4) translateY(-1.25rem)
+}
+
+
 #eleclead {
 
   transform: scale(1.4);
   bottom: -40px;
+  right: 8px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #eleclead{
   transform:  scale(1.5) translateY(-1.25rem)
 }
 
+#eleclead2 {
+
+  transform: scale(1.2);
+  bottom: -20px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #eleclead2{
+  transform:  scale(1.4) translateY(-1.25rem)
+}
+
 #projlead2 {
 
-  transform: scale(1.4);
-  bottom: -50px;
+  transform: scale(1.2);
+  top: 195;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #projlead2{
-  transform:  scale(1.5) translateY(-1.25rem)
+  transform:  scale(1.4) translateY(-1.25rem)
 }
 
 #mechlead {
@@ -507,23 +552,22 @@ nav img{
 
 #mechlead2 {
 
-  transform: scale(1.4);
-  bottom: -75px;
+  transform: scale(1.2);
+  bottom: -20px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #mechlead2{
-  transform:  scale(1.5) translateY(-1.25rem)
+  transform:  scale(1.4) translateY(-1.25rem)
 }
 
 #scilead {
 
-  transform: scale(1.4);
-  bottom: -8px;
-  right: 10px;
+  transform: scale(1.2);
+  bottom: -20px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #scilead{
-  transform:  scale(1.5) translateY(-1.25rem)
+  transform:  scale(1.4) translateY(-1.25rem)
 }
 
 /*Subsystem Section*/
@@ -1066,203 +1110,6 @@ textarea.form-control{
   background-color: transparent;
 }
 
-/*gallery*/
-
-.image-1{
-  border: 2px solid #4c2a87;
-  width: 25%;
-  display: inline-block;
-  padding: 5px;
-  margin: 50px;
-  background: #4c2a87;
-  border-radius: 10px;
-}
-
-.image-1 img{
-  width: 100%;
-  height: auto;
-  
-}
-
-.gallery{
-  display: flex;
-  justify-content: center;
-  padding-top: 28px;
-
-}
-
-.desc-1 {
-  padding: 15px;
-  text-align: center;
-  color: white;
-  margin: auto;
-
-}
-
-.image-1:hover {
-  transform: scale(1.02);
-  transition: all 0.5s;
-}
-
-
-
-/*type2*/
-
-.type-2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container{
-  margin-top: 2%;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  background: #4c2a87;
-  width: 30%;
-  height: auto;
-
-}
-
-.container p{
-  color: white;
-  background: #4c2a87;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container h2{
-  font: 30px;
-  color: white;
-  background: #4c2a87;
-  text-align: center;
-}
-
-.bar{
-  display: block;
-  width: 150px;
-  height: 6px;
-  background: white;
-  margin: 15px auto;
-  border-radius: 10px;
-}
-
-.type-2 img{
-  border: white solid 2px;
-  border-radius: 5px;
-  max-width: 100%;
-  border-radius: 10px;
-
-}
-
-.image-container{
-  background-color: #693EB2;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-
-
-/*slideshow*/
-
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  border: #4c2a87 5px solid;
-  border-radius: 5px;
-}
-
-
-.mySlides {
-  display: none;
-}
-
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: #4c2a87;
-}
-
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-.text {
-  color: #4c2a87;
-  font-size: 15px;
-  padding: 8px 0px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(255,255,255,0.5);
-}
-
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  background-color: #4c2a87;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
-
-
-
-
 
 
 /*adding responsive nav bar*/
@@ -1273,10 +1120,13 @@ textarea.form-control{
     display: none;
   }
 
+  .whoAreWe div{
+    display: none;
+  }
+
   .m-nav{
     border-bottom: white solid 2px;
-  
-    
+
   }
 
   .logo {
@@ -1333,16 +1183,15 @@ textarea.form-control{
   .f-m{
     display: flex;
     justify-content: center;
-
   }
 
   .f-m img{
     max-width: 450px;
-    width: 85%;
-    border: white solid 2px;
+    width: 84%;
+    border: #693EB2 solid 2px;
     border-radius: 20px;
     position: relative;
-    top: 140px;
+    top: 100px;
     margin: 20px 0px;
     height: auto;
 
@@ -1424,22 +1273,7 @@ textarea.form-control{
     background: #4c2a87;
     border-radius: 10px;
   }
-  
-  .image-1 img{
-    
-    
-    
-    
-  }
-  
-  .gallery{
-    display: flex;
-    justify-content: center;
-    padding-top: 28px;
-    flex-direction: column;
-    align-items: center;
-  
-  }
+
   
   .desc-1 {
     padding: 15px;
@@ -1448,6 +1282,16 @@ textarea.form-control{
     margin: auto;
     font-size: 8px;
   
+  }
+
+
+  .whoAreWe-m{
+    display: flex;
+    text-align: auto;
+    text-align: center;
+    height: auto;
+    margin-top: 100px;
+
   }
 
 
@@ -1468,3 +1312,157 @@ textarea.form-control{
 
 }
 
+.m-card {
+  width: 90vw; 
+  height: 90vh; 
+  background-color: white; 
+  border-radius: 20px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin: auto; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1000; 
+  display: none; 
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close-btn:hover {
+  color: red; 
+}
+
+
+//Subsystems New Styling
+
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  color: #fff;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 200px;
+}
+
+.subcontent {
+  position: relative;
+  width: 100%;
+  max-width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-left: 16.5%;
+  margin-top: 4%;
+
+}
+
+.subimages {
+  position: relative;
+  width: 70%;
+  margin-left: -30%;
+  margin-bottom: 10%;
+}
+
+.subimages img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  z-index: 1; 
+}
+
+.subtext-box {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.subtext-box p {
+  text-shadow: none;
+  background: transparent;
+  color: #fff;
+}
+
+.subtext-box h3 {
+  text-shadow: none;
+  background: transparent;
+  color: #fff;
+  font-size: 2em !important;
+}
+
+@media (max-width: 768px) {
+  .subcontent {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+    margin-left: -6%;
+  }
+
+  .subimages {
+    width: 100%; 
+    margin-left: 0;
+    margin-bottom: 10px; 
+  }
+
+  .subimages img {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .subtext-box {
+    position: relative;
+    width: 90%; 
+    max-width: none; 
+    margin-top: 10px; 
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: none;
+    transform: none; 
+    right: 0; 
+  }
+
+  .subtext-box h3 {
+    font-size: 1.8em;
+  }
+
+  .subtext-box p {
+    font-size: 1em;
+  }
+}
+
+.sec-01 {
+  margin-top: 20px !important;
+  padding-top: 0px !important; 
+}

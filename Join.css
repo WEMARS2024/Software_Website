@@ -60,6 +60,7 @@
     transform: translateY(-20px);
     font-size: 14px;
     color: #693EB2;
+    border: none;
   }
   .textarea textarea{
     resize: none;
@@ -71,6 +72,7 @@
     bottom: 10px;
     font-size: 16px;
     transition: all 0.3s ease;
+    margin-bottom: 20px;
   }
   .textarea label{
     width: 100%;
@@ -145,7 +147,7 @@
     }
   }
 
-  .header{toggleMenu
+  .header{
     margin: 0;
     padding: 0;
     background: black;
@@ -418,7 +420,7 @@ nav img{
   color: white;
   padding: 2px 30px;
   display: inline-block;
-  width: 130px;
+  width: 140px;
   overflow: hidden;
 }
 
@@ -514,7 +516,7 @@ nav img{
       padding: 30px;
   }
 
-  .nav-img (
+  .nav-img {
       padding: 30px;
-  )
+  }
 }

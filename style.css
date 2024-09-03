@@ -1,4 +1,4 @@
-*{toggleMenu
+*{
   margin: 0;
   padding: 0;
   background: black;
@@ -132,7 +132,7 @@ nav img{
   color: white;
   padding: 2px 30px;
   display: inline-block;
-  width: 130px;
+  width: 140px;
   overflow: hidden;
 }
 
@@ -215,6 +215,18 @@ s
       display: block;
   }
 
+  
+  .down-arrow {
+    visibility: hidden;
+    display: none;
+  }
+
+  .down-arrow:after {
+    visibility: hidden;
+    display: none;
+  }
+  
+
   .nav-links{
       position: fixed;
       background: white;
@@ -239,9 +251,9 @@ s
       padding: 30px;
   }
 
-  .nav-img (
+  .nav-img {
       padding: 30px;
-  )
+  }
 }
 
 /*Blurbs Section*/
@@ -403,7 +415,7 @@ s
 
 .profile h1 {
   padding-top: 20px;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
 }
 
@@ -426,7 +438,7 @@ s
   aspect-ratio: 1 / 1;
   object-fit: cover;
   width: 100%;
-  //margin-inline: auto;
+  /*margin-inline: auto;*/
   border-radius: 50%;
 }
 
@@ -1158,6 +1170,8 @@ textarea.form-control{
     display: none;
   }
 
+  
+
   .whoAreWe div{
     display: none;
   }
@@ -1357,6 +1371,7 @@ textarea.form-control{
   height: auto;
   font-size: 1.4rem;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .m-card {
@@ -1480,10 +1495,10 @@ textarea.form-control{
   visibility: visible;
 }
 
-//Subsystems New Styling
+/*Subsystems New Styling*/
 
 
-section {
+.sec-01{
   position: relative;
   display: flex;
   justify-content: center;
@@ -1504,7 +1519,7 @@ section {
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
-  margin-left: 16.5%;
+  margin-left: -5%;
   margin-top: 4%;
 
 }
@@ -1541,6 +1556,7 @@ section {
   border: none;
   border-radius: 10px;
   box-shadow: none;
+  margin-top: 10px;
 }
 
 .subtext-box p {
@@ -1606,6 +1622,18 @@ section {
     text-align: center;
     background-color: transparent;
   }
+
+  .profile h1 {
+    padding-top: 20px;
+    font-size: 40px;
+    color: white;
+  }
+  
+  .profile h4 {
+    font-size: 30px;
+    color: white;
+  }
+
 }
 
 .sec-01 {

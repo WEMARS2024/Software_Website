@@ -502,7 +502,7 @@ s
 #projLead {
 
   transform: scale(0.9);
-  bottom: -45px;
+  bottom: -55px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #projLead{
@@ -592,12 +592,12 @@ s
 
 #mechlead {
 
-  transform: scale(0.9);
-  bottom: -75px;
+  transform: scale(1.4);
+  bottom: -10px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #mechlead{
-  transform:  scale(1) translateY(-1.25rem)
+  transform:  scale(1.6) translateY(-1.25rem)
 }
 
 #mechlead2 {

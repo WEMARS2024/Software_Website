@@ -502,7 +502,7 @@ s
 #projLead {
 
   transform: scale(0.9);
-  bottom: -60px;
+  bottom: -45px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #projLead{

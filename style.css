@@ -603,7 +603,7 @@ s
 #founder {
 
   transform: scale(0.75);
-  top: 35px;
+  top: 38px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #founder{

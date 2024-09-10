@@ -416,7 +416,7 @@ s
 
 .profile h1 {
   padding-top: 20px;
-  font-size: 30px;
+  font-size: 28px;
   color: white;
 }
 
@@ -510,6 +510,16 @@ s
   transform:  scale(1) translateY(-1.25rem)
 }
 
+#vp {
+
+  transform: scale(1.2);
+  transition: transform 250ms ease-in-out
+  
+}
+.person__container:hover #vp{
+  transform:  scale(1.4) translateY(-1.25rem)
+}
+
 #sciencelead {
 
   transform: scale(1.2);
@@ -584,11 +594,20 @@ s
 #projlead2 {
 
   transform: scale(1.2);
-  top: 195;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #projlead2{
   transform:  scale(1.4) translateY(-1.25rem)
+}
+
+#founder {
+
+  transform: scale(0.75);
+  top: 35px;
+  transition: transform 250ms ease-in-out
+}
+.person__container:hover #founder{
+  transform:  scale(0.85) translateY(-1.25rem)
 }
 
 #mechlead {
@@ -1166,6 +1185,10 @@ textarea.form-control{
 /*adding responsive nav bar*/
 
 @media screen and (max-width: 800px){
+
+  #filler {
+    display: none;
+  }
   
   .d-nav{
     display: none;
@@ -1574,6 +1597,9 @@ textarea.form-control{
 }
 
 @media (max-width: 768px) {
+
+
+
   .subcontent {
     flex-direction: column;
     align-items: center;

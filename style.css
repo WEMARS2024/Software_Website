@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  background: black;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -12,6 +11,7 @@ img {
 
 body {
   -webkit-font-smoothing: antialiased;
+  background: black;
 }
 
 h1, h2, h3, h4, a {
@@ -21,7 +21,7 @@ h1, h2, h3, h4, a {
 .header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/MarsRover.png);
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Benny-home.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -29,14 +29,14 @@ h1, h2, h3, h4, a {
 
 /*Fancy title aka magic lol*/
 #magic {
-
   width: 100%;
   height: 100vh;
   display: block;
   top: 0;
   left: 0;
   z-index: 0;
-  background-color: black;
+  background: transparent !important;
+  padding-bottom: 250px;
 }
 
 
@@ -47,7 +47,7 @@ h1, h2, h3, h4, a {
 .down-arrow {
   position: absolute;
   top: calc(100vh - 60px);
-  left: calc(50% - 14px);
+  left: calc(50% - 600px);
   width: 0;
   height: 30px;
   border: 2px solid;
@@ -57,6 +57,31 @@ h1, h2, h3, h4, a {
 }
 
 .down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+.down-arrow2 {
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: calc(50% + 600px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 3.5s infinite;
+  color: white;
+}
+
+.down-arrow2:after {
   content: " ";
   position: absolute;
   top: 12px;
@@ -291,8 +316,47 @@ s
   border-radius: 10px;
 }
 
+.whoarewe-d {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.gradient {
+  width: 100%;
+  height: 40px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(2,2,24,1) 100%);
+}
+
+.indexBlurbBox2 {
+  width: 90%;
+  margin-top: 2%;
+  position: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: black;
+}
+
+.indexBlurbBox2 h2{
+  color: #fff;
+  font-size: 36px;
+  text-align: auto;
+  text-align: center;
+  background: transparent;
+  /*#4c2a87*/
+}
+
+.indexBlurbBox2 p{
+  color: #fff;
+  font-size: 15px;
+  background: transparent;
+}
+
+
 .whoAreWe{
-  margin: auto;
   text-align: auto;
   text-align: center;
   margin-top: 2%;
@@ -300,19 +364,83 @@ s
 }
 
 .team-photo img{
-  display: block;
   position: center;
   margin: auto;
-  width: 60%;
+  width: 80%;
+  border-radius: 20px;
+}
+
+
+.indexBlurbBox3 {
+  width: 40%;
+  position: center;
+  padding: 10px;
   border-radius: 10px;
+  background: black;
+  margin-top: 7.5%;
+  margin-right: 20px;
+}
+
+.indexBlurbBox3 h2{
+  color: #fff;
+  font-size: 36px;
+  text-align: auto;
+  text-align: center;
+  background: transparent;
+}
+
+.indexBlurbBox3 p{
+  color: #fff;
+  font-size: 15px;
+  background: transparent;
 }
 
 .goal{
-  margin: auto;
   text-align: auto;
   text-align: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 10%;
+  margin-bottom: 8%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  
+}
+
+
+.slideshow-container {
+  width: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 .row{
@@ -320,6 +448,7 @@ s
   display: flex;
   justify-content: space-between;
 }
+
 
 /*Footer section*/
 .footer *{
@@ -523,10 +652,11 @@ s
 #sciencelead {
 
   transform: scale(1.2);
+  right: 4px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #sciencelead{
-  transform:  scale(1.4) translateY(-1.25rem)
+  transform:  scale(1.3) translateY(-1.00rem)
 }
 
 #softlead {
@@ -539,12 +669,13 @@ s
 }
 
 #softlead2 {
-  transform: scale(1.2);
-  bottom: -20px;
+  transform: scale(1.7);
+  right: 8px;
+  bottom: 30px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #softlead2{
-  transform:  scale(1.4) translateY(-1.25rem)
+  transform:  scale(1.9) translateY(-1.00rem)
 }
 
 
@@ -561,7 +692,8 @@ s
 #buislead2 {
 
   transform: scale(1.2);
-  bottom: -20px;
+  bottom: -10px;
+  left: 10px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #buislead2{
@@ -583,11 +715,11 @@ s
 #eleclead2 {
 
   transform: scale(1.2);
-  bottom: -20px;
+  bottom: -40px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #eleclead2{
-  transform:  scale(1.4) translateY(-1.25rem)
+  transform:  scale(1.3) translateY(-1.25rem)
 }
 
 #projlead2 {
@@ -602,7 +734,7 @@ s
 #founder {
 
   transform: scale(0.75);
-  top: 38px;
+  top: 40px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #founder{
@@ -611,32 +743,35 @@ s
 
 #mechlead {
 
-  transform: scale(1.4);
-  bottom: -10px;
+  transform: scale(2.0);
+  right: 25px;
+  bottom: 5px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #mechlead{
-  transform:  scale(1.6) translateY(-1.25rem)
+  transform:  scale(2.1) translateY(-1.25rem)
 }
 
 #mechlead2 {
 
-  transform: scale(1.2);
-  bottom: -20px;
+  transform: scale(2.0);
+  left: 10px;
+  bottom: 15px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #mechlead2{
-  transform:  scale(1.4) translateY(-1.25rem)
+  transform:  scale(2.1) translateY(-1.25rem)
 }
 
 #scilead {
 
-  transform: scale(1.2);
-  bottom: -20px;
+  transform: scale(1.8);
+  left: 7px;
+  bottom: 20px;
   transition: transform 250ms ease-in-out
 }
 .person__container:hover #scilead{
-  transform:  scale(1.4) translateY(-1.25rem)
+  transform:  scale(1.9) translateY(-1.00rem)
 }
 
 /*Subsystem Section*/
@@ -832,7 +967,7 @@ textarea {
   height: 34px;
   width: 400px;
   overflow: hidden;
-  border: 1px solid #fff;
+  border: 3px solid #4c2a87;
   transition: all .2s ease-in-out;
 }
 
@@ -840,7 +975,7 @@ textarea {
   width: 400px;
   padding: 5px;
   height: 34px;
-  color: white;
+  color: #4c2a87;
   transition: all .2s ease-in-out;
 }
 
@@ -1285,6 +1420,36 @@ textarea.form-control{
     gap: 15px; /* Adjust this value for spacing between profiles */
     padding-bottom: 50px
   }
+
+  
+
+  .special-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adjust this value for spacing between profiles */
+    padding-bottom: 50px
+  }
+
+  .special-profile {
+    flex: 1;
+    width: 10vh;
+    text-align: center;
+  }
+
+   
+  .special-profile h1 {
+    padding-top: 20px;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .special-profile h4 {
+    font-size: 8px;
+    color: white;
+  }
+  
+  
   
   
   .profile{

@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        
         <section class="header">
             <nav>
                 <a href="index.html"><img src="images/WeMarsLogo.png"></a>
@@ -88,8 +89,10 @@
   
    }
   </script>
-  <div class = name>
-    <div id="magic"></div>
+  <div class ="name">
+    <div id="magic"></div></div>
+  </div>
+  <div class ="gradient">
   </div>
   
   <!--Mobile Formatting-->
@@ -113,13 +116,21 @@
     </section>
 
   <div class="down-arrow"></div>
+  <div class="down-arrow2"></div>
 <script src="title.js"></script>
 <!--Makes page responsive. To test responsiveness, inspect page and change screen size (options are available)-->
 
         </section>
+        
+        <div class="whoarewe-d">
+            
+
+        <section class="team-photo">
+            <img src="images/Wemars members.jpg">
+        </section>
 
         <section class="whoAreWe">
-            <div class="indexBlurbBox">
+            <div class="indexBlurbBox2">
                 <h2>Who are we?</h2>
                 <div class="header-line"></div>
                 <p>The Western Engineering Mars Rover team is a student-led club driven towards the goal of building a rover that is capable of accomplishing various tasks in environments similar to ones found on the surface of mars. 
@@ -129,17 +140,32 @@
             </div>
         </section>
 
-        <section class="team-photo">
-            <img src="images/Wemars members.jpg">
-        </section>
+        </div>
 
         
         
         <section class="goal">
-            <div class="indexBlurbBox">
+            <div class="indexBlurbBox3">
                 <h2>Our Goal</h2>
                 <div class="header-line"></div>
                 <p>Our goal as a team is first and foremost to create a positive space for students to learn and actively contribute. We are also pursuing the goal of taking home first place at the Canadian International Rover Challenge, and competing at URC. </p>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images\Slideshow\20240810_203838.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images\Slideshow\DSC02970.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images\Slideshow\IMG_7406.jpg" style="width:100%">
+                </div>
             </div>
         </section>
 
@@ -185,6 +211,23 @@
                 }
             }
 
+        </script>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
         </script>
 
     </body>

@@ -1872,7 +1872,7 @@ textarea.form-control{
     }
   
     .xp {
-      height: 300px;
+      height: 260px;
       width: auto;
       margin-left: 50px;
       margin-right: 50px;
@@ -1886,7 +1886,7 @@ textarea.form-control{
     }
   
     .proto {
-      height: 300px;
+      height: 260px;
       width: auto;
       margin-left: 50px;
       margin-right: 50px;
@@ -1899,6 +1899,20 @@ textarea.form-control{
       transform: scale(1.0);
   
     }
+
+    .usc {
+      height: 300px;
+      width: 350px;
+      margin-left: 50px;
+      margin-right: 50px;
+      border-radius: 70px;
+      border: solid;
+      overflow: hidden;
+      border: black;
+      background: black;
+      transition: transform 250ms ease-in-out;
+      transform: scale(1.0);
+    }
   
     .xp:hover {
       transition: transform 250ms ease-in-out;
@@ -1906,6 +1920,11 @@ textarea.form-control{
     }
   
     .proto:hover {
+      transition: transform 250ms ease-in-out;
+      transform: scale(1.03)
+    }
+
+    .usc:hover {
       transition: transform 250ms ease-in-out;
       transform: scale(1.03)
     }

@@ -111,7 +111,7 @@
                     </div>
                     <div class="feature-media">
                         <div class="rover-viewer" id="rover-viewer">
-                            <img id="rover-orbit" src="images/Rover_Orbit2/Data/images_webp/Frame000109.webp" alt="WE Mars rover 360 view" draggable="false">
+                            <img id="rover-orbit" src="images/Rover_Orbit3/Data/images_webp/Frame000121.webp" alt="WE Mars rover 360 view" draggable="false">
                             <span class="rover-viewer-hint">Drag to rotate · up/down for angle</span>
                         </div>
                     </div>
@@ -371,16 +371,16 @@
                 const img = document.getElementById('rover-orbit');
                 if (!viewer || !img) return;
 
-                const COLS = 36;
-                const ROWS = 8;
-                const frameBase = 'images/Rover_Orbit2/Data/images_webp/Frame';
+                const COLS = 30;
+                const ROWS = 12;
+                const frameBase = 'images/Rover_Orbit3/Data/images_webp/Frame';
                 const frameExt = '.webp';
                 const pixelsPerCol = 16;
-                const pixelsPerRow = 32;
+                const pixelsPerRow = 28;
                 const PRELOAD_BATCH = 32;
 
                 let col = 0;
-                let row = 3;
+                let row = 4;
                 let dragging = false;
                 let lastX = 0;
                 let lastY = 0;

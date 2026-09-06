@@ -393,7 +393,7 @@
 
                 function framePath(rowIndex, colIndex) {
                     const r = Math.min(Math.max(rowIndex, 0), ROWS - 1);
-                    const c = ((colIndex % COLS) + COLS) % COLS;
+                    const c = Math.min(Math.max(colIndex, 0), COLS - 1);
                     const frameNumber = r * COLS + c + 1;
                     return `${frameBase}${String(frameNumber).padStart(6, '0')}${frameExt}`;
                 }
@@ -471,8 +471,20 @@
                     let nextRow = row;
 
                     while (Math.abs(dragX) >= pixelsPerCol) {
-                        nextCol += dragX > 0 ? 1 : -1;
-                        dragX += dragX > 0 ? -pixelsPerCol : pixelsPerCol;
+                        const direction = dragX > 0 ? 1 : -1;
+
+                        if (direction > 0 && nextCol >= COLS - 1) {
+                            dragX = 0;
+                            break;
+                        }
+
+                        if (direction < 0 && nextCol <= 0) {
+                            dragX = 0;
+                            break;
+                        }
+
+                        nextCol += direction;
+                        dragX += direction > 0 ? -pixelsPerCol : pixelsPerCol;
                     }
 
                     while (Math.abs(dragY) >= pixelsPerRow) {
@@ -494,7 +506,7 @@
 
                     if (nextCol === col && nextRow === row) return;
 
-                    col = ((nextCol % COLS) + COLS) % COLS;
+                    col = Math.min(Math.max(nextCol, 0), COLS - 1);
                     row = Math.min(Math.max(nextRow, 0), ROWS - 1);
                     queueRender();
                 }
